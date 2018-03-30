@@ -7,18 +7,18 @@ If [react-native-vector-icons](https://github.com/oblador/react-native-vector-ic
 ```
 $ npm install native-base --save
 $ npm install react-native-vector-icons --save
-$ npm install react-native-modalbutton --save 
+$ npm install react-native-modal-button --save 
 ```
 If both have been installed, use the following:
 ```
-$ npm install react-native-modalbutton --save 
+$ npm install react-native-modal-button --save 
 ```
 
 Usage
 ------
 Import the ModalButton
 ```javascript
-import ModalButton from 'react-native-modalbutton';
+import ModalButton from 'react-native-modal-button';
 ```
 
 Initialize the state variables (inside the constructor of the parent component)
@@ -52,8 +52,8 @@ Full Example
 Initialize the state variables and the handler
 ```javascript
 import React, {Component} from 'react';
-import 
-import ModalButton from 'react-native-modalbutton';
+import {Button} from 'react-native';
+import ModalButton from 'react-native-modal-button';
 
 export default class ParentExample extends Component{
     constructor(props) {
