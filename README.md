@@ -7,11 +7,11 @@ If [react-native-vector-icons](https://github.com/oblador/react-native-vector-ic
 ```
 $ npm install native-base --save
 $ npm install react-native-vector-icons --save
-$ npm install react-native-modal-button --save 
+$ npm install react-native-button-modal --save
 ```
 If both have been installed, use the following:
 ```
-$ npm install react-native-modal-button --save 
+$ npm install react-native-button-modal --save
 ```
 
 Usage
@@ -65,7 +65,7 @@ export default class ParentExample extends Component{
         };
         this.updateCounter = this.updateCounter.bind(this)
     }
-    
+
     updateCounter(){
     if(this.state.counter < 10){
       this.setState({
@@ -78,7 +78,7 @@ export default class ParentExample extends Component{
       })
     }
   }
-    
+
     render(){
         return(
             <ButtonModal
