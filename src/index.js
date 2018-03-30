@@ -59,11 +59,23 @@ const styles = StyleSheet.create({
     justifyContent: "flex-end",
     margin: 0
   },
-  nonNativeBaseformElement: {
+  modalContent: {
+    backgroundColor: "white",
+    padding: 22,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 4,
+    borderColor: "black",
+    backgroundColor: "white"
+  },
+  formElement: {
     flex: 1,
     marginLeft: 15,
     marginRight: 15,
-    marginTop: 13
+    marginTop: 4
+  },
+  nonNativeBaseformElement: {
+    margin: 2,
   }
 });
 
