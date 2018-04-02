@@ -1,6 +1,6 @@
 ButtonModal
 ======
-Demo
+Demo (source code in example file)
 ------
 ![Alt Text](https://github.com/EricWiener/react-native-button-modal/blob/master/ButtonModalDemoGIF.gif)
 
@@ -63,8 +63,8 @@ export default class ParentExample extends Component{
         super(props);
         this.state = {
           counter: 0,
-          modalSuccess: false,
-          isModalVisible: false,
+          modalSuccess: false, 
+          isModalVisible: false, //YOU MUST HAVE A STATE VARIABLE TO DECIDE MODAL VISIBILITY
         };
         this.updateCounter = this.updateCounter.bind(this)
     }
@@ -92,8 +92,8 @@ export default class ParentExample extends Component{
                 buttonMessage={'Click here to display popup'}
                 buttonType={'rectangle'}
                 isVisible={this.state.isModalVisible}
-                showModal={() => this.setState({isModalVisible: true})}
-                hideModal={() => this.setState({isModalVisible: false})}
+                showModal={() => this.setState({isModalVisible: true})} //OPENS THE MODAL
+                hideModal={() => this.setState({isModalVisible: false})} //HIDES THE MODAL
             />
         );
     }
