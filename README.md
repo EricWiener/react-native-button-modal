@@ -1,5 +1,9 @@
 ButtonModal
 ======
+Demo
+------
+![Alt Text](https://github.com/EricWiener/react-native-button-modal/blob/master/ButtonModalDemoGIF.gif)
+
 Installation
 ------
 If [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons) and [native-base](https://nativebase.io) haven't been installed already, use the following:
@@ -81,16 +85,15 @@ export default class ParentExample extends Component{
     render(){
         return(
             <ButtonModal
-                success={false}
-                reference='popup'
+                success={this.state.modalSuccess}
                 content={
                     <Button onPress={this.updateCounter}></Button>
                 }
                 buttonMessage={'Click here to display popup'}
                 buttonType={'rectangle'}
-                isVisible={this.state.displayPopup}
-                showModal={() => this.setState({displayPopUp: true})}
-                hideModal={() => this.setState({displayPopup: false})}
+                isVisible={this.state.isModalVisible}
+                showModal={() => this.setState({isModalVisible: true})}
+                hideModal={() => this.setState({isModalVisible: false})}
             />
         );
     }
