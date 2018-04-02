@@ -1,6 +1,5 @@
 ButtonModal
 ======
-
 Installation
 ------
 If [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons) and [native-base](https://nativebase.io) haven't been installed already, use the following:
@@ -112,3 +111,5 @@ export default class ParentExample extends Component{
 | allowClick      | int     | TRUE          | Allow the modal to be opened. If set to false, the initial button will grey out. If true,                   the initial button will be darker.         |
 | allowClose      | int     | TRUE          | Allow the modal to be closed. If set to false, the confirm button will grey out. If true, the initial button will display dark blue. |
 | success         | boolean | FALSE         | Changes the color of the initial button to green.       
+| showModal      | function     | null          | Specifies the function to open the modal |
+| hideModal         | function | null         | Specifies the function to close the modal. |   
