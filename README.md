@@ -2,7 +2,7 @@ ButtonModal
 ======
 Demo (source code in example file)
 ------
-![Alt Text](https://github.com/EricWiener/react-native-button-modal/blob/master/ButtonModalDemoGIF.gif)
+![Alt Text](https://github.com/EricWiener/react-native-button-modal/raw/master/ButtonModalDemoGIF.gif)
 
 Installation
 ------
@@ -63,7 +63,7 @@ export default class ParentExample extends Component{
         super(props);
         this.state = {
           counter: 0,
-          modalSuccess: false, 
+          modalSuccess: false,
           isModalVisible: false, //YOU MUST HAVE A STATE VARIABLE TO DECIDE MODAL VISIBILITY
         };
         this.updateCounter = this.updateCounter.bind(this)
