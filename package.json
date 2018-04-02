@@ -31,8 +31,8 @@
     "react": "16.0.0",
     "react-native": "0.52"
   },
-  "files": {
+  "files": [
     "src"
-  },
+  ],
   "homepage": "https://github.com/EricWiener/react-native-button-modal#readme"
 }
