@@ -117,3 +117,4 @@ export default class ParentExample extends Component{
 | showModal      | function     | null          | Specifies the function to open the modal |
 | hideModal         | function | null         | Specifies the function to close the modal. |   
 | closeButtonText        | String | Confirm        | Message on close button. | 
+| disableConfirm       | Boolean | FALSE        | Disable the confirm button, but allows the modal to be closed with the back arrow and swipe down. |
