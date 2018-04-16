@@ -116,3 +116,4 @@ export default class ParentExample extends Component{
 | success         | boolean | FALSE         | Changes the color of the initial button to green.       
 | showModal      | function     | null          | Specifies the function to open the modal |
 | hideModal         | function | null         | Specifies the function to close the modal. |   
+| closeButtonText        | String | Confirm        | Message on close button. | 

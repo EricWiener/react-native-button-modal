@@ -45,8 +45,9 @@ export default class ButtonModal extends Component {
           swipeDirection="down"
         >
           {this.props.content}
-          <Button block primary={this.props.allowClose} light={!this.props.allowClose} disabled={!this.props.allowClose} onPress={this.props.hideModal}>
-            <Text style={{fontSize: this.props.confirmTextSize}}> Confirm </Text>
+          <Button block primary={this.props.allowClose} light={!this.props.allowClose} disabled={!this.props.allowClose}
+            onPress={this.props.hideModal}>
+            <Text style={{fontSize: this.props.confirmTextSize}}> {this.props.closeButtonText} </Text>
           </Button>
         </Modal>
       </View>
@@ -88,4 +89,6 @@ ButtonModal.defaultProps = {
   allowClose: true,
   allowClick: true,
   buttonMessage: 'Click here',
+  executeOnConfirm: null,
+  closeButtonText: 'Confirm',
 }
