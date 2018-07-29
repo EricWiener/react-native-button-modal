@@ -19,18 +19,18 @@ export default class ButtonModal extends Component {
               bordered
               dark={this.props.allowClick}
               light={!this.props.allowClick}
-              style={styles.nonNativeBaseformElement}
+              style={styles.nonNativeBaseformElement, {backgroundColor: this.props.openButtonBackgroundColor}}
               success={this.props.success}
               onPress={this.props.allowClick ? this.props.showModal : null}
             >
-              <Text style={{fontSize: this.props.initialTextSize}}>
+              <Text style={{fontSize: this.props.initialTextSize, color: this.props.openButtonTextColor}}>
                 {this.props.buttonMessage}
               </Text>
             </Button>
           : //buttonStyle == 'add'
           (this.props.buttonType=='icon') ?
             <Button transparent onPress={this.props.showModal}>
-              <Icon name={this.props.iconName} style={{fontSize: this.props.iconSize}}/>
+              <Icon name={this.props.iconName} style={{fontSize: this.props.iconSize, color: this.props.openButtonTextColor}}/>
             </Button>
           : //buttonStyle != 'add' or 'rectangle'
             <Text>ERROR: Please specify a correct buttonType</Text>
@@ -49,8 +49,9 @@ export default class ButtonModal extends Component {
           {
             this.props.hideConfirmButton ? '' :
             <Button block primary={this.props.allowClose || this.props.disableConfirm} light={!this.props.allowClose} disabled={!this.props.allowClose || this.props.disableConfirm}
-                onPress={this.props.hideModal}>
-                <Text style={{fontSize: this.props.confirmTextSize}}> {this.props.closeButtonText} </Text>
+                onPress={this.props.hideModal}
+                style={{backgroundColor: this.props.closeButtonBackgroundColor}}>
+                <Text style={{fontSize: this.props.confirmTextSize, color: this.props.closeButtonTextColor}}> {this.props.closeButtonText} </Text>
             </Button>
 
           }
@@ -67,13 +68,12 @@ const styles = StyleSheet.create({
     margin: 0
   },
   modalContent: {
-    backgroundColor: "white",
+    backgroundColor: this.props.modalBackgroundColor,
     padding: 22,
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 4,
-    borderColor: "black",
-    backgroundColor: "white"
+    borderColor: this.props.modalBorderColor,
   },
   formElement: {
     flex: 1,
@@ -99,4 +99,10 @@ ButtonModal.defaultProps = {
   disableConfirm: false,
   closeButtonText: 'Confirm',
   hideConfirmButton: false,
+  openButtonBackgroundColor: 'white',
+  openButtonTextColor: 'black',
+  closeButtonBackgroundColor: 'blue',
+  closeButtonTextColor: 'black',
+  modalBackgroundColor: 'white',
+  modalBorderColor: 'black',
 }
