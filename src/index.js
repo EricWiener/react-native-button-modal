@@ -38,7 +38,7 @@ export default class ButtonModal extends Component {
 
         <Modal
           isVisible={this.props.isVisible}
-          style={styles.bottomModal}
+          style={styles.bottomModal, {backgroundColor: this.props.modalBackgroundColor, border: this.props.modalBorderColor}}
           backdropOpacity={0.7}
           onBackdropPress={this.props.allowClose ? this.props.hideModal : null}
           onSwipe={this.props.allowClose ? this.props.hideModal : null}
@@ -68,12 +68,12 @@ const styles = StyleSheet.create({
     margin: 0
   },
   modalContent: {
-    backgroundColor: this.props.modalBackgroundColor,
+    backgroundColor: 'white',
     padding: 22,
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 4,
-    borderColor: this.props.modalBorderColor,
+    borderColor: 'black',
   },
   formElement: {
     flex: 1,
