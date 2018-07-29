@@ -101,21 +101,27 @@ export default class ParentExample extends Component{
 ```
 
 
-| Prop            | Type    | Default Value | Description                                                                                                                          |
-|-----------------|---------|---------------|-------------------------------------------------------------------------------------------|
-| isModalVisible  | boolean | FALSE         | Decides if the modal will display                                                                                                |
-| buttonType      | String  | rectangle     | Decides the type of initial button to display (either 'rectangle' or 'icon')                                                         |
-| iconName        | String  | rectangle     | React Native Vector Icon name (can only be used if buttonType == 'icon')                                                             |
-| buttonMessage   | String  | Click here    | The message inside the initial button (can only be used if buttonType=='rectangle')                                                  |
-| content         | node    | null          | The content to be displayed inside the modal                                                                                         |
-| iconSize        | int     | 27            | Specifies the size of the icon                                                                                                       |
-| buttonTextSize  | int     | 15            | Font size of the text inside the initial button                                                                                      |
-| confirmTextSize | int     | 15            | Font size of the text inside the confirm button                                                                                      |
-| allowClick      | int     | TRUE          | Allow the modal to be opened. If set to false, the initial button will grey out. If true,                   the initial button will be darker.         |
-| allowClose      | int     | TRUE          | Allow the modal to be closed. If set to false, the confirm button will grey out. If true, the initial button will display dark blue. |
-| success         | boolean | FALSE         | Changes the color of the initial button to green.       
-| showModal      | function     | null          | Specifies the function to open the modal |
-| hideModal         | function | null         | Specifies the function to close the modal. |   
-| closeButtonText        | String | Confirm        | Message on close button. |
-| disableConfirm       | Boolean | FALSE        | Disable the confirm button, but allows the modal to be closed with the back arrow and swipe down. |
-| hideConfirmButton       | Boolean | FALSE        | Hide the confirm button. |
+| Prop                       | Type     | Default Value | Description                                                                                                                          |
+|----------------------------|----------|---------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| isModalVisible             | boolean  | FALSE         | Decides if the modal will display                                                                                                    |
+| buttonType                 | String   | rectangle     | Decides the type of initial button to display (either 'rectangle' or 'icon')                                                         |
+| iconName                   | String   | rectangle     | React Native Vector Icon name (can only be used if buttonType == 'icon')                                                             |
+| buttonMessage              | String   | Click here    | The message inside the initial button (can only be used if buttonType=='rectangle')                                                  |
+| content                    | node     | null          | The content to be displayed inside the modal                                                                                         |
+| iconSize                   | int      | 27            | Specifies the size of the icon                                                                                                       |
+| buttonTextSize             | int      | 15            | Font size of the text inside the initial button                                                                                      |
+| confirmTextSize            | int      | 15            | Font size of the text inside the confirm button                                                                                      |
+| allowClick                 | int      | TRUE          | Allow the modal to be opened. If set to false, the initial button will grey out. If true, the initial button will be darker.         |
+| allowClose                 | int      | TRUE          | Allow the modal to be closed. If set to false, the confirm button will grey out. If true, the initial button will display dark blue. |
+| success                    | boolean  | FALSE         | Changes the color of the initial button to green.                                                                                    |
+| showModal                  | function | null          | Specifies the function to open the modal                                                                                             |
+| hideModal                  | function | null          | Specifies the function to close the modal.                                                                                           |
+| closeButtonText            | String   | Confirm       | Message on close button.                                                                                                             |
+| disableConfirm             | Boolean  | FALSE         | Disable the confirm button, but allows the modal to be closed with the back arrow and swipe down.                                    |
+| hideConfirmButton          | Boolean  | FALSE         | Hide the confirm button.                                                                                                             |
+| openButtonBackgroundColor  | String   | white         | Button to open modal's background color                                                                                              |
+| openButtonTextColor        | String   | black         | Button to open modal's text color                                                                                                    |
+| closeButtonBackgroundColor | String   | blue          | Button to close modal's background color                                                                                             |
+| closeButtonTextColor       | String   | black         | Button to close modal's text color                                                                                                   |
+| modalBackgroundColor       | String   | white         | Background color of modal                                                                                                            |
+| modalBorderColor           | String   | black         | Border color of modal                                                                                                                |
