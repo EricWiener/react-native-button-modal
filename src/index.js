@@ -38,7 +38,7 @@ export default class ButtonModal extends Component {
 
         <Modal
           isVisible={this.props.isVisible}
-          style={styles.bottomModal, {backgroundColor: this.props.modalBackgroundColor, border: this.props.modalBorderColor}}
+          style={styles.bottomModal}
           backdropOpacity={0.7}
           onBackdropPress={this.props.allowClose ? this.props.hideModal : null}
           onSwipe={this.props.allowClose ? this.props.hideModal : null}
@@ -65,7 +65,7 @@ export default class ButtonModal extends Component {
 const styles = StyleSheet.create({
   bottomModal: {
     justifyContent: "flex-end",
-    margin: 0
+    margin: 0,
   },
   modalContent: {
     backgroundColor: 'white',
@@ -103,6 +103,4 @@ ButtonModal.defaultProps = {
   openButtonTextColor: 'black',
   closeButtonBackgroundColor: 'blue',
   closeButtonTextColor: 'black',
-  modalBackgroundColor: 'white',
-  modalBorderColor: 'black',
 }

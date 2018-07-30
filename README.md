@@ -123,5 +123,3 @@ export default class ParentExample extends Component{
 | openButtonTextColor        | String   | black         | Button to open modal's text color                                                                                                    |
 | closeButtonBackgroundColor | String   | blue          | Button to close modal's background color                                                                                             |
 | closeButtonTextColor       | String   | black         | Button to close modal's text color                                                                                                   |
-| modalBackgroundColor       | String   | white         | Background color of modal                                                                                                            |
-| modalBorderColor           | String   | black         | Border color of modal                                                                                                                |
